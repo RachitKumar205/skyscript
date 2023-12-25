@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -18,10 +19,26 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: 'Montserrat', sans-serif;
+}
+
+input {
+  color: black;
+}
+
+.clear-bg {
+  background-color: rgb(147, 197, 253);
+  background-image: radial-gradient(at 64% 20%, rgb(165, 180, 252) 0, transparent 100%), radial-gradient(at 65% 26%, rgb(253, 224, 71) 0, transparent 68%), radial-gradient(at 34% 100%, rgb(2, 132, 199) 0, transparent 80%), radial-gradient(at 26% 49%, rgb(207, 250, 254) 0, transparent 14%);
+}
+
+.clouds-bg{
+  background-color: rgb(113, 113, 122);
+  background-image: radial-gradient(at 0% 100%, rgb(107, 114, 128) 0, transparent 100%), radial-gradient(at 9% 60%, rgb(31, 41, 55) 0, transparent 66%), radial-gradient(at 57% 84%, rgb(30, 41, 59) 0, transparent 100%);
+}
+
+.thunderstorm-bg{
+
+  background-color: rgb(30, 58, 138);
+  background-image: radial-gradient(at 100% 100%, rgb(30, 41, 59) 0, transparent 100%), radial-gradient(at 0% 18%, rgb(51, 65, 85) 0, transparent 100%), radial-gradient(at 68% 87%, rgb(30, 64, 175) 0, transparent 93%);
+
 }
